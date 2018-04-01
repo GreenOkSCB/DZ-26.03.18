@@ -20,11 +20,11 @@ class Rectangle {
     private double perRect2 = (a + b) * 2; // по идее если прямоугольник этого достаточно
     private double S = a * b;
 
-    public void getP() {
+    protected void getP() {
         System.out.println("Периметр прямоуголника " + P);
     }
 
-    public void getS() {
+    protected void getS() {
         System.out.println("Площадь прямоугольника " + S);
     }
 }

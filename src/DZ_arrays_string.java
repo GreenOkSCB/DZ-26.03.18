@@ -12,23 +12,23 @@ public class DZ_arrays_string {
             Перед созданием массива подумайте, какого он будет размера. 2 4 6 … 18 20 2 4 6 … 20
           */
 
-//        int val = 0; // посчитаем размер массива
-//        for (int i = 2; i <= 20; i += 2) {
-//            val++;
-//        }
-//
-//        int ev[] = new int[val];
-//        int start = 2;
-//        for (int i = 0; i < ev.length; i++) {
-//            ev[i] = start;
-//            start += 2;
-//            System.out.print(ev[i] + " ");
-//        }
-//        System.out.println();
-//
-//        for (int i = 0; i < ev.length; i++) {
-//            System.out.print(ev[i] + "\n");
-//        }
+        int val = 0; // посчитаем размер массива
+        for (int i = 2; i <= 20; i += 2) {
+            val++;
+        }
+
+        int ev[] = new int[val];
+        int start = 2;
+        for (int i = 0; i < ev.length; i++) {
+            ev[i] = start;
+            start += 2;
+            System.out.print(ev[i] + " ");
+        }
+        System.out.println();
+
+        for (int i = 0; i < ev.length; i++) {
+            System.out.print(ev[i] + "\n");
+        }
 
 
 
