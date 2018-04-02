@@ -2,29 +2,23 @@ package figure;
 
 class Rectangle {
 
-    private int x1 = 3;
-    private int x2 = 6;
-    private int x3 = 4;
-    private int x4 = 1;
-    private int y1 = 1;
-    private int y2 = 4;
-    private int y3 = 6;
-    private int y4 = 3;
-
-    private double a = Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
-    private double b = Math.sqrt((x2 - x3) * (x2 - x3) + (y2 - y3) * (y2 - y3));
-    private double c = Math.sqrt((x3 - x4) * (x3 - x4) + (y3 - y4) * (y3 - y4));
-    private double d = Math.sqrt((x4 - x1) * (x4 - x1) + (y4 - y1) * (y4 - y1));
+    private double a = getSide(3, 6, 1, 4);
+    private double b = getSide(6, 4, 4, 6);
+    private double c = getSide(4, 1, 6, 3);
+    private double d = getSide(3, 1, 1, 3);
 
     private double P = a + b + c + d;
-    private double perRect2 = (a + b) * 2; // по идее если прямоугольник этого достаточно
     private double S = a * b;
 
-    protected void getP() {
-        System.out.println("Периметр прямоуголника " + P);
+    protected double getP() {
+        return P;
     }
 
-    protected void getS() {
-        System.out.println("Площадь прямоугольника " + S);
+    protected double getS() {
+        return S;
+    }
+
+    private double getSide(int x1, int x2, int y1, int y2) {
+        return Math.sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
     }
 }

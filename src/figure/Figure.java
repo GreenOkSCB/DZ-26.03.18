@@ -4,17 +4,17 @@ public class Figure {
     public static void main(String[] args) {
 
         Circle circle = new Circle();
-        circle.getP();
-        circle.getS();
+        System.out.println(circle.getP());
+        System.out.println(circle.getS());
 
         Rectangle rectangle = new Rectangle();
-        rectangle.getP();
-        rectangle.getS();
+        System.out.println(rectangle.getP());
+        System.out.println(rectangle.getS());
 
 
         Triangle triangle = new Triangle();
-        triangle.getP();
-        triangle.getS();
+        System.out.println(triangle.getP());
+        System.out.println(triangle.getS());
 
     }
 }

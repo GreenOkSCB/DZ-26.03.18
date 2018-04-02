@@ -14,12 +14,12 @@ class Circle {
     private double P = 2 * pi * r;
     private double S = pi * (r * r);
 
-    protected void getP() {
-        System.out.println("Длина окружности " + P);
+    protected double getP() {
+        return P;
     }
 
-    protected void getS() {
-        System.out.println("Площадь окружности " + S);
+    protected double getS() {
+        return S;
     }
 
 
