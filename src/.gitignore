@@ -1,3 +1,4 @@
 *.rbc
 /out
 *.xml
+*.class
