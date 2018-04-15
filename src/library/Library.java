@@ -13,9 +13,27 @@ package library;
 
 public class Library {
     public static void main(String[] args) {
-        Book roman1 = new Book("L. Tolstoy", "Anna Karenina", 350);      // создаем конкретный экземпляр Book
-        Book roman2 = new Book("F.Dostoevsky", "Idiot", 425);           // создаем конкретный экземпляр Book
+        Book roman1 = new Book("L. Tolstoy", "Anna Karenina", 350, 0);      // создаем конкретный экземпляр Book
+        Book roman2 = new Book("F.Dostoevsky", "Idiot", 425, 0);           // создаем конкретный экземпляр Book
 
+        Archive archive = new Archive();    // создали объект типа Архив
+
+        archive.putBook(roman1, 7);
+        archive.putBook(roman2, 9);
+
+        archive.getBook(roman1, 15);
+
+
+//        archive.getBook(roman2, 11);
+
+        archive.putBook(roman1, 13);
+//        archive.putBook(roman2, 9);
+//
+//        archive.getBook(roman1, 19);
+//        archive.getBook(roman2, 11);
+
+//             System.out.println("Сейчас в архиве " + roman1.title + " : " + roman1.count);
+//             System.out.println("Сейчас в архиве " + roman2.title + " : " + roman2.count);
 
 
 

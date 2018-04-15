@@ -2,17 +2,18 @@ package library;
 
 class Book {
 
-    String autor;      // свойство книг, написал какой-то Автор
+    String author;      // свойство книг, написал какой-то Автор
     String title;      // свойства книг иметь Название
     int pagesNum;      // свойства книг иметь определенное кол-во страниц
+    int count;
 
-    protected Book(String autor, String title, int pagesNum) {    // конструктор книги, чтобы при создании книги мы
-        this.autor = autor;                                       // не забыли указать автора, название и кол-во страниц
+    public Book(String author, String title, int pagesNum, int count) {    // конструктор книги, чтобы при создании книги мы
+        this.author = author;                                       // не забыли указать автора, название и кол-во страниц
         this.title = title;
         this.pagesNum = pagesNum;                                 // зачем "this"? Где мы будем использовать их?
-
-
+        this.count = count;
     }
+
 
 
 }
